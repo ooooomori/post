@@ -8,7 +8,7 @@ function response(room, msg, sender, isGroupChat, replier, imageDB, packageName)
     if(noteread[sender] == undefined){
       noteread[sender] = false;
     }
-    var note = FileStream.read("sdcard/botDB/"+room+"/note/note.json");
+    var note = FileStream.read("sdcard/msgbot/"+room+"/note/note.json");
       if(note == null) note = [];
       else note = JSON.parse(note);
       
